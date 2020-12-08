@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Aplicatie JSON</title>
+		<meta charset="UTF-8">
+		<title>Page not found</title>
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<link rel="stylesheet" type="text/css" href="css/footer.css">
+		<link rel="stylesheet" type="text/css" href="css/nav-css.css">
+		<link rel="stylesheet" type="text/css" href="css/aplicatie-json.css">
+		<link rel="stylesheet" type="text/css" href="css/@media_800.css" media="screen and (max-width: 800px)">
+		<link rel="stylesheet" type="text/css" href="css/@media_580.css" media="screen and (max-width: 580px)">
+    <meta name="description" content="Jocuri freeware">
+    <meta name="keywords" content="jocuri, freeware, games, game, freeware games, jocuri freeware">
+    <meta name="author" content="Fusneica Florentin-Cristian">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico"/>
+
+	<!-- pentru afisarea ca template am downloadat ejs.min.js de la https://github.com/mde/ejs/releases/tag/v3.0.2 -->
+	<script src="js/ejs.min.js"></script>
+
+	<script src="js/aplicatie-json.js"></script>
+</head>
+<body>
+
+    <% include ../fragmente/header %>
+<main class="container">
+    
+    
+		
+    <p>Alt tabel cu jocuri</p> 
+    <button id="sort-an">Sortare dupa an</button>
+
+
+    <div id="calculare">
+      <button id="buton-calculare">Calculeaza media anilor din BD</button>
+      <p>Medie: </p>
+    </div>
+    <br>
+    
+    <button id="filtrare-descarcare">Jocuri care au link descarcare</button>
+    
+    <br>
+    <div id="dupa-nume">
+
+      <label>Scrieti caracterul dorit: 
+      <input type="text" maxlength="1" id="input-caracter">
+      </label>
+      <br>
+      <button id="filtrare-nume" style="float:left;">Filtrare dupa caracter inceput</button>
+    </div>
+
+    <button id="resetare">Reset</button>
+		
+		<!-- aici se va afisa continutul JSON-ului cu formatul din template-ul definit in script -->
+		<div class="afis" id="afisTemplate">
+    </div>
+
+    <br>
+
+    <div>
+      <img id="poza">
+    </div>
+    
+</main>
+
+<%- include("../fragmente/footer")  %> <!-- extensia nu e necesara -->
+
+
+</body>
+</html>  

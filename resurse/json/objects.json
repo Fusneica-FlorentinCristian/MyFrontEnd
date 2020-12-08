@@ -1,0 +1,47 @@
+{
+  "lastId": 8,
+  "jocuri": [
+    {
+      "id": 1,
+      "nume": "Chicken Invaders",
+      "data_lansare": "1999",
+      "link_descarcare": "DA!"
+    },
+    {
+      "id": 2,
+      "nume": "FNaF World",
+      "data_lansare": "2016",
+      "link_descarcare": "Nu ;("
+    },
+    {
+      "id": 3,
+      "nume": "Doki Doki Literature Club!",
+      "data_lansare": "2017",
+      "link_descarcare": "DA!"
+    },
+    {
+      "id": 4,
+      "nume": "Solitaire",
+      "data_lansare": "1975",
+      "link_descarcare": "DA!"
+    },
+    {
+      "id": 5,
+      "nume": "Osu!",
+      "data_lansare": "2007",
+      "link_descarcare": "DA!"
+    },
+    {
+      "id": 6,
+      "nume": "IMVU",
+      "data_lansare": "2004",
+      "link_descarcare": "DA!"
+    },
+    {
+      "id": 7,
+      "nume": "cIMVU",
+      "data_lansare": "2004",
+      "link_descarcare": "DA!"
+    }
+  ]
+}

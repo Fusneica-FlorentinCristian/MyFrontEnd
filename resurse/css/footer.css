@@ -1,0 +1,25 @@
+/* FOOTER */
+
+footer{
+  
+  padding-top: 2.5vw;
+}
+
+.footer_section {
+	background-image: url(/images/vintage-wallpaper.png);
+  position:relative;
+	height: 8.5rem;
+	width: 100%;
+	display: flex;
+	bottom:0;
+	justify-content: center;
+	align-items: center;
+}
+
+.copyright {
+	color: white;
+	font-family: SourceCodePro_Regular;
+	font-size: 18px;
+	text-align: center;	
+	text-transform: uppercase;
+}

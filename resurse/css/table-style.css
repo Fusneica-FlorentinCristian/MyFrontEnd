@@ -1,0 +1,27 @@
+/* TABEL */
+.table{
+	width: 100%;
+	border-collapse: collapse;
+	/*margin-top: 50px;*/
+	margin: 0 auto;
+}
+
+.table td,.table th{
+  padding:12px 15px;
+  border:1px solid #ddd;
+  text-align: center;
+  font-size:16px;
+}
+
+.table th{
+	background-color: darkblue;
+	color:#ffffff;
+}
+
+.table tbody tr:nth-child(even){
+	background-color: rgba(100, 150, 100, 0.3);
+}
+
+.table tbody tr:nth-child(odd){
+	background-color: rgba(100, 50, 100, 0.3);
+}

@@ -1,0 +1,25 @@
+/* DESPRE */
+
+.depre {
+	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+}
+
+.despre h1 {
+	font-size: 3rem;
+	margin: 0px 0px 20px 0px;
+}
+
+.despre h2 {
+	font-size: 2rem;
+	padding-top: 20px;
+}
+
+.informatii_site p a {
+	color: blue;
+	text-decoration: none;
+}
+
+.despre p, blockquote {
+	padding-top: 20px;
+	font-size: 20px;
+}

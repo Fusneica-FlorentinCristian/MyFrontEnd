@@ -1,0 +1,51 @@
+	<header>
+		<nav>
+			<ul class="first_ul">
+				<li><img id="img_alt_title" src="images/images.jpg" title="logo" alt="logo"></li>
+				<li><a href="/index"> ACASĂ </a></li>
+				<li><a href="/lista-de-jocuri"> LISTĂ DE JOCURI </a></li>
+				<li><a href="#"> DIVERSE </a>
+					<ul class="second_ul">
+						<li><a href="/despre"> DESPRE </a></li>
+						<li><a href="/contact"> CONTACT </a></li>			<li><a href="/aplicatie-json"> Aplicatie JSON </a></li>
+
+					</ul>
+				</li>
+        <li><a href="/inregistrare">Inregistrare</a></li>
+        <li>
+          <div id="login_logout">
+            <!-- datele transmise in render devin  proprietati ale obiectului locals -->
+		        <% if(!locals.username) {  %>
+              <form method="post" action="/login">
+                <label>
+                  Username: <input type="text" name="username" value="" required>
+                </label>
+                <br>
+                <label>
+                  Parola: <input type="password" name="parola" value="" required>
+                </label>
+                <br>
+                <input type="submit" value="OK">
+              </form>
+            <% }
+          else { %>
+            Utilizator logat: <%= locals.username  %>.
+            <a href="/logout">Logout</a>
+            <% } %>
+        </div>
+      </li>
+
+        <li>
+          <div>
+            <% if(locals.username) {  %>
+            Salut <%= locals.nume  %>, ultima data ai intrat de pe ip-ul <%= locals.ultimul_ip  %>, pe data de <%= locals.ultima_data%>. <% 
+            if(locals.nr_accesari >1) { %>Ai vazut site-ul de <%= locals.nr_accesari  %> ori. <% }
+            else if(locals.nr_accesari==1){ %> Ai vazut site-ul o singura data. <% }
+            else { %> Bine ai venit, e prima ta data pe site!<% }} %>
+          </div>
+        </li>
+			</ul>
+		</nav>
+		
+		
+	</header>

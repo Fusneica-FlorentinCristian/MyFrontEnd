@@ -1,0 +1,13 @@
+main *{
+  overflow: hidden;
+}
+
+.afis{
+	border:2px solid skyblue;
+	padding:0.7em;
+}
+
+.templ_jocuri{
+	border:1px solid grey;
+	padding:0.4em;
+}

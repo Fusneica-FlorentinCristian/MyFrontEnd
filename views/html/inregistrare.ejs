@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+	<title>Inregistrare utilizator</title>
+
+	<meta charset="UTF-8">
+		<title>Inregistrare</title>
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<link rel="stylesheet" type="text/css" href="css/footer.css">
+		<link rel="stylesheet" type="text/css" href="css/nav-css.css">
+    <link rel="stylesheet" type="text/css" href="css/inregistrare.css">
+		<link rel="stylesheet" type="text/css" href="css/@media_800.css" media="screen and (max-width: 800px)">
+		<link rel="stylesheet" type="text/css" href="css/@media_580.css" media="screen and (max-width: 580px)">
+        <meta name="description" content="Jocuri freeware">
+        <meta name="keywords" content="jocuri, freeware, games, game, freeware games, jocuri freeware">
+        <meta name="author" content="Fusneica Florentin-Cristian">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico"/>
+</head>
+
+
+<body>
+
+    <% include ../fragmente/header %>
+
+<main class="container">
+    <div class="afisaj">
+        <h1>Inregistrare utilizator:</h1><br>
+		</p>
+		<% if(!locals.rsstatus) { %><!-- verific daca status e definit-->
+		<form method="post" action="/inreg" class="date"> <!-- daca nu pun action atunci actionul default este pagina curenta -->
+			<p>
+			<label>
+				Username: <input type="text" name="username" value="" required>
+			</label>
+			</p>
+			<p>
+			<label>
+				Nume: <input type="text" name="nume" value="" required>
+			</label>
+			</p>
+			<p>
+			<label>
+				Jocuri preferate (separate cu virgula): <input type="text" name="jocuri" value="" placeholder="CS:GO, League of Legends" size="50">
+			</label>
+			</p>
+			<p>
+			<label>
+				Parola: <input type="password" name="parola" value="" required>
+			</label>
+			</p>
+			<p>
+			<label>
+				Reintroduceti parola: <input type="password" name="rparola" value="" required>
+			</label>
+			</p>
+			<p>
+			<label>
+				Email: <input type="text" name="email" value="" placeholder="cont_de_mail@mail.com"  size="50" required>
+			</label>
+			</p>
+      
+      <p><span> 
+      <input type = "checkbox" name="terms" required> </span>I agree to the terms and conditions</p>
+			<p>		
+			<input type="submit" value="Submit">
+			</p>
+		</form>
+		<% } else if(rsstatus=="ok"){ %>
+			<p>Date introduse</p>
+		<% } else {%>
+			<p>Eroare</p>
+		<% } %>
+    </div>
+</main>
+
+    <% include ../fragmente/footer %>
+
+</body>
+</html>

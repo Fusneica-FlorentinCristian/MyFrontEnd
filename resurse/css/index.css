@@ -1,0 +1,21 @@
+/* sectiuni index */
+
+.introducere {
+	font-family: "Comic Sans MS", cursive, sans-serif;
+}
+
+/*.h1_intro {
+	display: block;
+	flex-shrink: 2;
+}*/
+
+.introducere h1 {
+	/*margin: 50px 0px 0px 0px;*/
+	font-size: 2rem;
+}
+
+
+.informatii_site h2, p {
+	padding-top: 20px;
+	font-size: 20px;
+}

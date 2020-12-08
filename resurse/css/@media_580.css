@@ -1,0 +1,33 @@
+/* responsive 580 */
+html {
+	font-size: 20px;
+}
+
+#img_alt_title {
+	display: none;
+}
+
+.container {
+	/*width: 	75vw;*/
+	padding-left: 5%;
+	padding-right: 5%;
+	margin: 0 auto;
+}
+
+
+.c1 {
+	display: none;
+}
+
+#grid{
+	display: flex;
+	flex-direction: column;
+}
+
+#grid *{
+	padding: 10px;
+}
+
+#grid figure {
+	margin-bottom: 10vw;
+}

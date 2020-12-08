@@ -1,0 +1,35 @@
+#grid {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-gap: 2vw;
+	margin: 3vw auto;
+	
+	/*justify-content: center;*/
+}
+
+#grid *{
+	padding: 10px;
+}
+
+figure {
+	border: 1px solid black;
+	background-color: rgb(255, 72, 255, 0.2);
+}
+
+figure img {
+	display: block;
+	margin: 0 auto;
+}
+
+figcaption {
+	font-size: 1.5rem;
+	text-align: center;
+}
+
+.descriere {
+	font-size: 1rem;
+}
+
+.imagine-joc{
+  text-align:center;
+}

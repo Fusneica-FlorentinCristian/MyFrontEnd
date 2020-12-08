@@ -1,0 +1,13 @@
+main p {
+	background-color: red;
+	text-align: center;
+	font-size: 2vw;
+	overflow: hidden;
+}
+
+main a {
+/*	background-color: red;*/
+	text-align: center;
+	font-size: 1.7vw;
+	overflow: hidden;
+}
